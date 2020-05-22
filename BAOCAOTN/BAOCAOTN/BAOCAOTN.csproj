@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA050D4C-6D8D-4F05-9AF9-74F564076FAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BAOCAOTN</RootNamespace>
+    <AssemblyName>BAOCAOTN</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bc_ds_pn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bc_ds_pn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="crp_bc_pn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp_bc_pn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crp_hoadon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp_hoadon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crp_in_phieunhan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp_in_phieunhan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ds_hoadon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_hoadon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds_phieunhan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_phieunhan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dungchung.cs" />
+    <Compile Include="frm_bc_pn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bc_pn.Designer.cs">
+      <DependentUpon>frm_bc_pn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_chucvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_chucvu.Designer.cs">
+      <DependentUpon>frm_chucvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_inhoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_inhoadon.Designer.cs">
+      <DependentUpon>frm_inhoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_in_phieunhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_in_phieunhan.Designer.cs">
+      <DependentUpon>frm_in_phieunhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_khachhang.Designer.cs">
+      <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dangnhap.Designer.cs">
+      <DependentUpon>frm_dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_md5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_md5.Designer.cs">
+      <DependentUpon>frm_md5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nhanvien.Designer.cs">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_phieunhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_phieunhan.Designer.cs">
+      <DependentUpon>frm_phieunhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_spdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_spdv.Designer.cs">
+      <DependentUpon>frm_spdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_trakhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_trakhach.Designer.cs">
+      <DependentUpon>frm_trakhach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_xuly_phieunhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_xuly_phieunhan.Designer.cs">
+      <DependentUpon>frm_xuly_phieunhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="crp_bc_pn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp_bc_pn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crp_hoadon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp_hoadon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crp_in_phieunhan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp_in_phieunhan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bc_pn.resx">
+      <DependentUpon>frm_bc_pn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_chucvu.resx">
+      <DependentUpon>frm_chucvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_inhoadon.resx">
+      <DependentUpon>frm_inhoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_in_phieunhan.resx">
+      <DependentUpon>frm_in_phieunhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_khachhang.resx">
+      <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dangnhap.resx">
+      <DependentUpon>frm_dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_md5.resx">
+      <DependentUpon>frm_md5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nhanvien.resx">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_phieunhan.resx">
+      <DependentUpon>frm_phieunhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_spdv.resx">
+      <DependentUpon>frm_spdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_trakhach.resx">
+      <DependentUpon>frm_trakhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_xuly_phieunhan.resx">
+      <DependentUpon>frm_xuly_phieunhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bc_ds_pn.xsc">
+      <DependentUpon>bc_ds_pn.xsd</DependentUpon>
+    </None>
+    <None Include="bc_ds_pn.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bc_ds_pn.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bc_ds_pn.xss">
+      <DependentUpon>bc_ds_pn.xsd</DependentUpon>
+    </None>
+    <None Include="ds_hoadon.xsc">
+      <DependentUpon>ds_hoadon.xsd</DependentUpon>
+    </None>
+    <None Include="ds_hoadon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_hoadon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds_hoadon.xss">
+      <DependentUpon>ds_hoadon.xsd</DependentUpon>
+    </None>
+    <None Include="ds_phieunhan.xsc">
+      <DependentUpon>ds_phieunhan.xsd</DependentUpon>
+    </None>
+    <None Include="ds_phieunhan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_phieunhan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds_phieunhan.xss">
+      <DependentUpon>ds_phieunhan.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EYE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cay_k.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_rac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
