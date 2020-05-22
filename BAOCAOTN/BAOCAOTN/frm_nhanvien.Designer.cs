@@ -169,9 +169,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(366, 73);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 23);
+            this.label4.Size = new System.Drawing.Size(48, 23);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Số điện thoại";
+            this.label4.Text = "SĐT";
             // 
             // label3
             // 

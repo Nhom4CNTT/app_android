@@ -151,3 +151,6 @@ D:\BAOCAOTN\BAOCAOTN\obj\Debug\BAOCAOTN.Properties.Resources.resources
 D:\BAOCAOTN\BAOCAOTN\obj\Debug\BAOCAOTN.csproj.GenerateResource.Cache
 D:\BAOCAOTN\BAOCAOTN\obj\Debug\BAOCAOTN.frm_in_phieunhan.resources
 D:\BAOCAOTN\BAOCAOTN\obj\Debug\BAOCAOTN.frm_bc_pn.resources
+C:\Users\LY KHANG PC\Desktop\Da1\app_android\BAOCAOTN\BAOCAOTN\bin\Debug\BAOCAOTN.exe.config
+C:\Users\LY KHANG PC\Desktop\Da1\app_android\BAOCAOTN\BAOCAOTN\obj\Debug\BAOCAOTN.exe
+C:\Users\LY KHANG PC\Desktop\Da1\app_android\BAOCAOTN\BAOCAOTN\obj\Debug\BAOCAOTN.pdb
